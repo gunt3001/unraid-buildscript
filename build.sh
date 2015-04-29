@@ -168,7 +168,7 @@ if [[ -L $D/bzroot/init ]]; then
 fi
 
 if [[ -f ${D}/bzroot-new ]]; then
-  if ask "5)Do you want to copy ${D}/bzroot-new to ${BZROOT}-new?" N ;then do_copy_bzroot; fi
+  if ask "5) Do you want to copy ${D}/bzroot-new to ${BZROOT}-new?" N ;then do_copy_bzroot; fi
 fi
 
 if [[ -f $D/kernel/arch/x86/boot/bzImage ]]; then
