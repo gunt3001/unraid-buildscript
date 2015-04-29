@@ -154,7 +154,7 @@ if ask "3) Do you want to download and extract the Linux kernel?" $([[ -f $D/ker
 if [[ -f $D/kernel/.config ]]; then
   if ask "3.1) Do you want to run Menu Config ?" N ;then do_make_menuconfig; fi
   if ask "3.2) Do you want to compile the Linux kernel?" N ;then do_compile_kernel; fi
-  if ask "3.4) Do you want to install Linux kernel modules?" N ;then do_install_kernel_modules; fi
+  if ask "3.3) Do you want to install Linux kernel modules?" N ;then do_install_kernel_modules; fi
 fi
 
 if ask "4) Do you want to extract BZROOT" $([[ -L $D/bzroot/init ]] && echo N||echo Y;); then do_extract_bzroot ; fi
