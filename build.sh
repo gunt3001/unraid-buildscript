@@ -4,30 +4,26 @@ D="$(dirname "$(readlink -f ${BASH_SOURCE[0]})")"
 BZROOT="/boot/bzroot" 
 
 URLS="
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/gcc-4.8.2-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/gcc-g++-4.8.2-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/patches/packages/glibc-2.17-x86_64-10_slack14.1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/binutils-2.23.52.0.1-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/make-3.82-x86_64-4.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/a/cxxlibs-6.0.18-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/perl-5.18.1-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/a/patch-2.7-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/l/mpfr-3.1.2-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/ap/bc-1.06.95-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/patches/packages/linux-3.10.17-2/kernel-headers-3.10.17-x86-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/l/libmpc-0.8.2-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/l/ncurses-5.9-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/a/cpio-2.11-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/pkg-config-0.25-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/autoconf-2.69-noarch-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/automake-1.11.5-noarch-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/l/libmpc-0.8.2-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/ap/sqlite-3.7.17-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/pkg-config-0.25-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/automake-1.11.5-noarch-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/autoconf-2.69-noarch-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/libtool-2.4.2-x86_64-2.txz
-http://mirrors.slackware.com/slackware/slackware64-14.1/slackware64/d/m4-1.4.17-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/gcc-5.3.0-x86_64-3.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/gcc-g++-5.3.0-x86_64-3.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/patches/packages/glibc-2.23-x86_64-4_slack14.2.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/binutils-2.26-x86_64-3.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/make-4.1-x86_64-2.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/a/aaa_elflibs-14.2-x86_64-23.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/perl-5.22.2-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/a/patch-2.7.5-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/l/mpfr-3.1.4-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/ap/bc-1.06.95-x86_64-3.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/patches/packages/linux-4.4.208/kernel-headers-4.4.208-x86-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/l/libmpc-1.0.3-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/l/ncurses-5.9-x86_64-4.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/a/cpio-2.12-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/pkg-config-0.29.1-x86_64-2.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/autoconf-2.69-noarch-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/automake-1.15-noarch-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/ap/sqlite-3.13.0-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/libtool-2.4.6-x86_64-4.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/m4-1.4.17-x86_64-1.txz
 "
 
 ask() {
@@ -76,7 +72,7 @@ do_install_modules(){
 ## KERNEL
 do_extract_kernel(){
   [[ $(uname -r) =~ ([0-9.]*) ]] &&  KERNEL=${BASH_REMATCH[1]} || return 1
-  LINK="https://www.kernel.org/pub/linux/kernel/v3.x/linux-${KERNEL}.tar.xz"
+  LINK="https://www.kernel.org/pub/linux/kernel/v4.x/linux-${KERNEL}.tar.xz"
 
   rm -rf $D/kernel; mkdir $D/kernel
 
