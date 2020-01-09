@@ -4,9 +4,9 @@ D="$(dirname "$(readlink -f ${BASH_SOURCE[0]})")"
 BZROOT="/boot/bzroot" 
 
 URLS="
-http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/gcc-5.3.0-x86_64-3.txz
-http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/gcc-g++-5.3.0-x86_64-3.txz
-http://mirrors.slackware.com/slackware/slackware64-14.2/patches/packages/glibc-2.23-x86_64-4_slack14.2.txz
+http://mirrors.slackware.com/slackware/slackware64-current/slackware64/d/gcc-9.2.0-x86_64-4.txz
+http://mirrors.slackware.com/slackware/slackware64-current/slackware64/d/gcc-g++-9.2.0-x86_64-4.txz
+http://mirrors.slackware.com/slackware/slackware64-current/slackware64/l/glibc-2.30-x86_64-1.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/binutils-2.26-x86_64-3.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/make-4.1-x86_64-2.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/a/aaa_elflibs-14.2-x86_64-23.txz
