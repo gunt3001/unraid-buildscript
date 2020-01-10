@@ -7,7 +7,7 @@ URLS="
 http://mirrors.slackware.com/slackware/slackware64-current/slackware64/d/gcc-9.2.0-x86_64-4.txz
 http://mirrors.slackware.com/slackware/slackware64-current/slackware64/d/gcc-g++-9.2.0-x86_64-4.txz
 http://mirrors.slackware.com/slackware/slackware64-current/slackware64/l/glibc-2.30-x86_64-1.txz
-http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/binutils-2.26-x86_64-3.txz
+http://mirrors.slackware.com/slackware/slackware64-current/slackware64/d/binutils-2.33.1-x86_64-1.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/make-4.1-x86_64-2.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/a/aaa_elflibs-14.2-x86_64-23.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/perl-5.22.2-x86_64-1.txz
@@ -24,6 +24,11 @@ http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/automake-1
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/ap/sqlite-3.13.0-x86_64-1.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/libtool-2.4.6-x86_64-4.txz
 http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/m4-1.4.17-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/guile-2.0.11-x86_64-2.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/l/gc-7.4.2-x86_64-3.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/l/libunistring-0.9.3-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/d/bison-3.0.4-x86_64-1.txz
+http://mirrors.slackware.com/slackware/slackware64-14.2/slackware64/l/elfutils-0.163-x86_64-1.txz
 "
 
 ask() {
